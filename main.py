@@ -30,7 +30,7 @@ from mysql.connector import Error
 
 ##====================BOT==================##
 
-client = discord.Bot(command_prefix='!', intents=discord.Intents.all())
+client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 ##================VARIABLES=================##
 
@@ -1072,7 +1072,7 @@ class MyView2(View): # Create a class called MyView that subclasses discord.ui.V
         
 
 
-@client.slash_command() # Create a slash command
+@client.command() # Create a slash command
 async def button(ctx):
     await ctx.respond("This is a button!", view=MyView2()) # Send a message with our View class that contains the button
 
@@ -1080,7 +1080,7 @@ async def button(ctx):
 
 
 
-@client.slash_command(name='leaderboards', description='Mira los rankings de tu elo!')
+@client.command(name='leaderboards', description='Mira los rankings de tu elo!')
 async def leaderboard(ctx, rank):
     user = ctx.author
     print(user.mention)
