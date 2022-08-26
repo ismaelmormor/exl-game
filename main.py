@@ -18,8 +18,6 @@ from datetime import datetime, timezone
 from cProfile import label
 from pydoc import describe
 from re import X
-from tabnanny import check
-from turtle import color, title
 from urllib import response
 import discord
 from discord.ui import Button, View
