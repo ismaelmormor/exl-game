@@ -22,7 +22,6 @@ from urllib import response
 import discord
 from discord.ui import Button, View
 from discord.ext import commands
-from discord.commands import slash_command
 from discord.utils import get
 
 
@@ -31,7 +30,7 @@ from mysql.connector import Error
 
 ##====================BOT==================##
 
-client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
+client = commands.Bot(prefix= commands.when_mentioned_or('!'), intents=discord.Intents.all())
 
 ##================VARIABLES=================##
 
@@ -1081,7 +1080,7 @@ async def button(ctx):
 
 
 
-@client.slash_command(name='leaderboards', description='Mira los rankings de tu elo!')
+@client.slash_command(guild_ids=[780485379613523990], name='leaderboards', description='Mira los rankings de tu elo!')
 async def leaderboard(ctx, rank):
     user = ctx.author
     print(user.mention)
