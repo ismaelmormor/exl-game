@@ -30,7 +30,7 @@ from mysql.connector import Error
 
 ##====================BOT==================##
 
-client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
+client = discord.Bot(command_prefix='!', intents=discord.Intents.all())
 
 ##================VARIABLES=================##
 
