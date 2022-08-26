@@ -1,9 +1,6 @@
-from ast import Not
+
 import os
-from audioop import adpcm2lin
-from cmath import pi
-from itertools import count
-from pickle import TRUE
+
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
@@ -15,14 +12,11 @@ import string
 import datetime
 from datetime import date
 from datetime import datetime, timezone
-from cProfile import label
-from pydoc import describe
-from re import X
-from urllib import response
+
+
 import discord
 from discord.ui import Button, View
 from discord.ext import commands
-from discord.utils import get
 
 
 import mysql.connector
