@@ -36,7 +36,7 @@ client = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 ##================VARIABLES=================##
 
-contraseña_sql = 'Ismael_123'
+contraseña_sql = os.environ['SQL_PASS']
 
 #------RANK A------#
 curso_A = 0
