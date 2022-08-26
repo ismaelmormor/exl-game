@@ -22,6 +22,7 @@ from urllib import response
 import discord
 from discord.ui import Button, View
 from discord.ext import commands
+from discord.commands import slash_command
 from discord.utils import get
 
 
