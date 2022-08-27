@@ -1075,7 +1075,7 @@ async def button(ctx):
 
 
 
-@client.add_command(name='leaderboards', description='Mira los rankings de tu elo!')
+@client.add_command()
 async def leaderboards(ctx, rank):
     user = ctx.author
     print(user.mention)
