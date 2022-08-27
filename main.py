@@ -1076,7 +1076,7 @@ async def button(ctx):
 
 
 @client.hybrid_command(guild_ids=[780485379613523990], name='leaderboards', description='Mira los rankings de tu elo!')
-async def leaderboard(ctx, rank):
+async def leaderboards(ctx, rank):
     user = ctx.author
     print(user.mention)
     try:
@@ -1105,7 +1105,7 @@ async def leaderboard(ctx, rank):
                 leaders[x][0] = f'<@{leaders[x][0]}>'
             tabla= tabulate(leaders, headers='firstrow', tablefmt='grid', showindex=range(1,i+1))
             embed = discord.Embed(title='Leaderboards', description=tabla)
-            await ctx.respond(embed=embed)
+            await ctx.reply(embed=embed)
     except Error as e:
          print("Error while connecting to MySQL", e)
 
