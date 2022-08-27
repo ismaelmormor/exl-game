@@ -18,7 +18,7 @@ import discord
 from discord.ui import Button, View
 from discord.ext import commands
 from discord import app_commands
-from discord_slash import SlashCommand, SlashContext
+from discord_slash import SlashCommand
 
 import mysql.connector
 from mysql.connector import Error
