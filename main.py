@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 import discord
 from discord.ui import Button, View
 from discord.ext import commands
+from discord import app_commands
 
 
 import mysql.connector
@@ -1074,7 +1075,7 @@ async def button(ctx):
 
 
 
-@client.slash_command(guild_ids=[780485379613523990], name='leaderboards', description='Mira los rankings de tu elo!')
+@client.hybrid_command(guild_ids=[780485379613523990], name='leaderboards', description='Mira los rankings de tu elo!')
 async def leaderboard(ctx, rank):
     user = ctx.author
     print(user.mention)
