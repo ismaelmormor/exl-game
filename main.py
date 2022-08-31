@@ -955,6 +955,7 @@ async def aleatorio(cola_members, canal, rank, num_lobby):
           #Conectamos
           Cursor = connection.cursor()
           Cursor.execute(f"UPDATE `rank_partidos` SET `jugador1_1`= {team1[0].id},`jugador1_2`= {team1[1].id},`jugador2_1`= {team2[0].id},`jugador2_2`={team2[1].id},`rank`='{rank}' WHERE `id`= {num_lobby}")
+          connection.commit()
           print('llegamos aquuuuuí')
     except Error as e:
         print("Error while connecting to MySQL", e)
