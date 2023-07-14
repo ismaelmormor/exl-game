@@ -1082,9 +1082,9 @@ async def leaderboards(ctx, rank):
     try:
         connection = mysql.connector.connect(
             host='sql914.main-hosting.eu',
-            user='u789788981_ismael',
+            user='u998459129_exlgame',
             password=contraseña_sql,
-            database='u789788981_polarisleague'
+            database='u998459129_exlgame'
         )
         if connection.is_connected():
             #Conectamos
