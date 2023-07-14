@@ -1081,7 +1081,7 @@ async def leaderboards(ctx, rank):
     print(user.mention)
     try:
         connection = mysql.connector.connect(
-            host='sql133.main-hosting.eu',
+            host='sql914.main-hosting.eu',
             user='u789788981_ismael',
             password=contraseña_sql,
             database='u789788981_polarisleague'
