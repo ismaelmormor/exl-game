@@ -508,10 +508,10 @@ async def report(ctx, id, w):
     await message.add_reaction('⏳')
     try:       
         connection = mysql.connector.connect(
-            host='sql133.main-hosting.eu',
-            user='u789788981_ismael',
+            host='sql914.main-hosting.eu',
+            user='u998459129_exlgame',
             password=contraseña_sql,
-            database='u789788981_polarisleague'
+            database='u998459129_exlgame'
         )
         if connection.is_connected():
             #Conectamos
@@ -628,10 +628,10 @@ async def report(ctx, id, w):
 def comprobacion_compas(jugador1, jugador2):
     try:
         connection = mysql.connector.connect(
-            host='sql133.main-hosting.eu',
-            user='u789788981_ismael',
+            host='sql914.main-hosting.eu',
+            user='u998459129_exlgame',
             password=contraseña_sql,
-            database='u789788981_polarisleague'
+            database='u998459129_exlgame'
         )
         if connection.is_connected():
             #Conectamos
@@ -706,10 +706,10 @@ async def stats(ctx):
     user = ctx.author
     try:
         connection = mysql.connector.connect(
-            host='sql133.main-hosting.eu',
-            user='u789788981_ismael',
+            host='sql914.main-hosting.eu',
+            user='u998459129_exlgame',
             password=contraseña_sql,
-            database='u789788981_polarisleague'
+            database='u998459129_exlgame'
         )
         if connection.is_connected():
             #Conectamos
@@ -877,10 +877,10 @@ async def capitanes(cola_members, canal, rank, num_lobby):
             try:
 
                 connection = mysql.connector.connect(
-                    host='sql133.main-hosting.eu',
-                    user='u789788981_ismael',
+                    host='sql914.main-hosting.eu',
+                    user='u998459129_exlgame',
                     password=contraseña_sql,
-                    database='u789788981_polarisleague'
+                    database='u998459129_exlgame'
                 )
                 if connection.is_connected():
                     #Conectamos
@@ -946,10 +946,10 @@ async def aleatorio(cola_members, canal, rank, num_lobby):
     print(num_lobby)
     try:
         connection = mysql.connector.connect(
-            host='sql133.main-hosting.eu',
-            user='u789788981_ismael',
+            host='sql914.main-hosting.eu',
+            user='u998459129_exlgame',
             password=contraseña_sql,
-            database='u789788981_polarisleague'
+            database='u998459129_exlgame'
         )
         if connection.is_connected():
           #Conectamos
@@ -1002,10 +1002,10 @@ def lobby_create():
     print('hasta aquí llego')
     try:
         connection = mysql.connector.connect(
-            host='sql133.main-hosting.eu',
-            user='u789788981_ismael',
+            host='sql914.main-hosting.eu',
+            user='u998459129_exlgame',
             password=contraseña_sql,
-            database='u789788981_polarisleague'
+            database='u998459129_exlgame'
         )
         if connection.is_connected():
             #Conectamos
@@ -1030,10 +1030,10 @@ def lobby_create():
 def v_channels(v1, v2, lobby_chat, id):
     try:         
         connection = mysql.connector.connect(
-            host='sql133.main-hosting.eu',
-            user='u789788981_ismael',
+            host='sql914.main-hosting.eu',
+            user='u998459129_exlgame',
             password=contraseña_sql,
-            database='u789788981_polarisleague'
+            database='u998459129_exlgame'
         )
         if connection.is_connected():
             #Conectamos
